@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(75, 1, 128, 0.8);
+  color: white;
+}
+.container {
+  /* border: 2px solid purple; */
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+}
+
+#header {
+  /* border: 2px solid black; */
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#title {
+  font-family: "Poppins", sans-serif;
+  line-height: 10px;
+  font-weight: bold;
+  font-size: 2em;
+}
+#description {
+  line-height: 0;
+  margin-bottom: 2em;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+#survey-form {
+  /* border: 2px solid green; */
+  padding: 10px;
+  margin: auto 20vw;
+  padding: 1.4em;
+  border-radius: 15px;
+  background-color: rgb(32, 32, 92);
+}
+
+.form-group {
+  /* border: 2px solid firebrick; */
+  margin: 0 auto 1.25rem auto;
+  padding: 15px;
+}
+
+.form-labels {
+  display: block;
+  margin: 1em 0;
+  min-width: 100%;
+  min-height: 3em;
+  border-radius: 5px;
+}
+
+.radio-inputs,
+.checkbox-input {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+}
+
+#submit {
+  min-width: 100%;
+  min-height: 2.5em;
+  background-color: rgb(40, 154, 40);
+  font-family: "Poppins", sans-serif;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#submit:hover {
+  cursor: pointer;
+  background-color: rgb(57, 201, 57);
+}
+
+#comments {
+  width: 80%;
+  min-height: 100px;
+  padding: 1em;
+  resize: vertical;
+}
+
+@media (max-width: 555px) {
+  #title {
+    font-size: 100%;
+  }
+  #description {
+    font-size: 2vw;
+  }
+  #survey-form {
+    width: 50%;
+  }
+  p,
+  label {
+    font-size: 75%;
+  }
+  .form-group {
+    width: 80%;
+  }
+  #comments {
+    min-width: 80%;
+  }
+}
